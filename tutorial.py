@@ -59,6 +59,6 @@ print("MACHINE LEARNING")
 optimizer = tf.train.GradientDescentOptimizer(0.01)
 train= optimizer.minimize(loss)
 sess.run(init)
-for i in range(1000):
+for i in range(100000):
     sess.run(train, {x:[1,2,3,4], y:[0,-1,-2,-3]})
 print(sess.run([W,b]))
